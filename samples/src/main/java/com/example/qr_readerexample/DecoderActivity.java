@@ -78,9 +78,9 @@ public class DecoderActivity extends AppCompatActivity
   // Called when a QR is decoded
   // "text" : the text encoded in QR
   // "points" : points where QR control points are placed
-  @Override public void onQRCodeRead(String text, PointF[] points) {
+  @Override public void onQRCodeRead(String text) {
     resultTextView.setText(text);
-    pointsOverlayView.setPoints(points);
+//    pointsOverlayView.setPoints(points);
   }
 
   private void requestCameraPermission() {
